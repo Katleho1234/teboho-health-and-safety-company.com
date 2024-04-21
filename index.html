@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+margin: 0%;
+padding: 0%;
+font-family: 'roboto', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(background.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+.navbar{
+height: 12%;
+display: flex;
+align-items: center;
+
+}
+
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+}
+
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.col{
+    flex-basis: 50%;
+}
+
+h1{
+    color: #fff;
+    font-size: 80px;
+}
+
+p{
+color: #fff;
+font-size: 11px;
+line-height: 15px;
+}
+
+button{
+    width: 180px;
+    color: #000;
+    background: #fff;
+    font-size: 12px;
+    padding: 12px 0;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0,5s;
+}
+.card1{
+    background-image: url(policy.jpg);
+}
+
+.card2{
+    background-image: url(R.png);
+}
+
+.card3{
+    background-image: url(safety.jpg);
+}
+
+.card4{
+    background-image: url(working.jpg);
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+h5{
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+}
+
+.card p{
+    text-shadow: 0 0 15px #000;
+    font-size: 8px;
+}
+
+</style>
+
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="logo.jpg" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                </ul>
+            </nav>
+            <img src="menu icon.png" class="menu-icon">
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1>Teboho H.Safety</h1>
+                <p>Teboho Health and Safety is dedicated to helping businesses create a safe and healthy work environment for their employees. <br>We provide a wide range of services, including safety audits, risk assessments, training, and consulting. <br>Our team of experienced professionals is committed to helping companies prevent accidents, injuries, and illnesses in the workplace. With our help, businesses can create a safe and productive environment where their employees can thrive. <br>At Teboho Health and Safety, we believe that a safe workplace is the key to success</p>
+                 <button type="button">EXPLORE </button> 
+            </div>
+            <div class="col">
+                <div class="card card1">
+                    <h5>OUR POLICY</h5>
+                    <p>Read More About Our Policy</p>
+
+                </div>
+                <div class="card card2">
+                    <h5>OUR RESPONSIBILITY</h5>
+                    <p>To Give An Environment And Workers Best Working Experience</p>
+
+                </div>
+                <div class="card card3">
+                    <h5>SAFE Environment</h5>
+                    <p>What We Are Willing To Offer</p>
+
+                </div>
+                <div class="card card4">
+                    <h5>WORK SAFELY</h5>
+                    <p>Be Safe With Us</p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
